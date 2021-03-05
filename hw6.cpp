@@ -45,7 +45,7 @@ double getAverageWindSpeed(vector<WeatherReport> reports) {
 */
 vector<double> getTemperatureValues(vector<WeatherReport> reports) {
   vector<double> values;
-  for (int i = 0; reports.size(); i++) {
+  for (int i = 0; i < reports.size(); i++) {
     values.push_back(reports[i].getTemperature());
   }
   return values;
